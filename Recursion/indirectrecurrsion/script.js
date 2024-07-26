@@ -1,19 +1,19 @@
+ let monney = 20;
+ let apples = 2000;
 
-let money = 20;
-let total = 2000;
-
-function buy(x) {
+ function apple(x) {
     if(x>0){
-        console.log(`i have RS ${x} and i can but ${total} apples`)
-buymore(x);
+        console.log(`we ammount we have is ${x} and the apples we can buy is ${apples}`);
+        buy(x);
 
     }
+
     
-     
-    }
-    function buymore(x) {
-        total= total-100;
-        buy(x-2);
-    }
+ }
 
-buy(money);
+ function buy(x) {
+    apples = apples-100;
+    apple(x-2);
+ }
+
+ apple(monney);
